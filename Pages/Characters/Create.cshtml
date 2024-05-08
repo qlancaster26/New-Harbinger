@@ -1,0 +1,44 @@
+@page
+@model New_Harbinger.Pages.Characters.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Character</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Character.Name" class="control-label"></label>
+                <input asp-for="Character.Name" class="form-control" />
+                <span asp-validation-for="Character.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Character.Species" class="control-label"></label>
+                <input asp-for="Character.Species" class="form-control" />
+                <span asp-validation-for="Character.Species" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Character.Affiliation" class="control-label"></label>
+                <input asp-for="Character.Affiliation" class="form-control" />
+                <span asp-validation-for="Character.Affiliation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
