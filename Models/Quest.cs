@@ -14,4 +14,7 @@ public class Quest
     [Required(ErrorMessage = "Type is required")]
     [StringLength(50, ErrorMessage = "Type cannot exceed 50 characters")]
     public string Type {get; set;} = string.Empty;
+
+    public int CharacterId {get; set;}
+    public Character? Character {get; set;}
 }

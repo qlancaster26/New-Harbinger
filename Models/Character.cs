@@ -1,4 +1,4 @@
-using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;              
 namespace StarWars.Models;
 public class Character
 {
@@ -15,4 +15,5 @@ public class Character
     [Required(ErrorMessage = "Affiliation is required")]
     [StringLength(50, ErrorMessage = "Affiliation cannot exceed 50 characters")]
     public string Affiliation {get; set;} = string.Empty; 
+    public List<Quest>? Quests {get; set;} = default!;
 }

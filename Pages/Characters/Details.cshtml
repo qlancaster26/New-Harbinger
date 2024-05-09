@@ -31,6 +31,28 @@
         </dd>
     </dl>
 </div>
+    <h4>Quests</h4>
+    <hr />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var quest in Model.Quests)
+            {
+                <tr>
+                    <td>@quest.Title</td>
+                    <td>@quest.Description</td>
+                    <td>@quest.Type</td>
+                </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+            }
+        </tbody>
+    </table>
+
 <div>
     <a asp-page="./Edit" asp-route-id="@Model.Character.CharacterId">Edit</a> |
     <a asp-page="./Index">Back to List</a>

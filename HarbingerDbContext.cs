@@ -41,7 +41,7 @@ namespace StarWars.Models
             );
             //seed quest data
             modelBuilder.Entity<Quest>().HasData(
-                new Quest { QuestId = 1, Title = "Jaku", Description = "Quest begins where Rey has a premonition", Type ="Main Quest" },
+                new Quest { QuestId = 1, Title = "Jaku", Description = "Quest begins where Rey has a premonition", Type ="Main Quest", CharacterId= 1},
                 new Quest { QuestId = 2, Title = "Academy on Telos", Description = "Char Meets Master Atris", Type ="Main Quest" },
                 new Quest { QuestId = 3, Title = "Memories Unlimited", Description = "Char travels to Jedha in search of holocron", Type ="Main Quest" },
                 new Quest { QuestId = 4, Title = "Trouble on Tanalor", Description = "Char comes face to face with an inquisitor", Type ="Main Quest" },

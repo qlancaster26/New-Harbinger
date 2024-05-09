@@ -20,6 +20,8 @@ namespace New_Harbinger.Pages.Characters
 
         public Character Character { get; set; } = default!;
 
+        public List<Quest> Quests {get; set; } =null!;
+
         public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)
@@ -32,10 +34,13 @@ namespace New_Harbinger.Pages.Characters
             {
                 return NotFound();
             }
-            else
+                else
             {
                 Character = character;
             }
+
+            Quests = await _context.Quests.Where(q => q.CharacterId == id).ToListAsync();
+
             return Page();
         }
     }
