@@ -20,9 +20,14 @@ namespace New_Harbinger.Pages.Characters
 
         public IList<Character> Character { get;set; } = default!;
 
+        [BindProperty(SupportsGet = true)]
+        public int PageNum {get; set; } = 1;
+
+        public int PageSize {get; set;} = 10;
+
         public async Task OnGetAsync()
         {
-            Character = await _context.Characters.ToListAsync();
+            Character = await _context.Characters.Skip((PageNum-1)*PageSize).Take(PageSize).ToListAsync();
         }
     }
 }

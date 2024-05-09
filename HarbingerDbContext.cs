@@ -42,20 +42,20 @@ namespace StarWars.Models
             //seed quest data
             modelBuilder.Entity<Quest>().HasData(
                 new Quest { QuestId = 1, Title = "Jaku", Description = "Quest begins where Rey has a premonition", Type ="Main Quest", CharacterId= 1},
-                new Quest { QuestId = 2, Title = "Academy on Telos", Description = "Char Meets Master Atris", Type ="Main Quest" },
-                new Quest { QuestId = 3, Title = "Memories Unlimited", Description = "Char travels to Jedha in search of holocron", Type ="Main Quest" },
-                new Quest { QuestId = 4, Title = "Trouble on Tanalor", Description = "Char comes face to face with an inquisitor", Type ="Main Quest" },
-                new Quest { QuestId = 5, Title = "Back to Jaku", Description = "Rey meets char outside shuttle for news", Type ="Main Quest" },
-                new Quest { QuestId = 6, Title = "A disturbance in the force", Description = "Char begins reliving inquistor standoff", Type ="Main Quest" },
-                new Quest { QuestId = 7, Title = "Palpatine Returns", Description = "The spirit of palpatine endures", Type ="Main Quest" },
-                new Quest { QuestId = 8, Title = "Rebel Forces Engage Defectors", Description = "beyond the astroid belt a star destroyer is found", Type ="Main Quest" },
-                new Quest { QuestId = 9, Title = "Po Dameron crash lands on Dxun", Description = "Po meets Meetra Surik a Jedi exile living among mandalorians", Type ="Main Quest" },
-                new Quest { QuestId = 10, Title = "Jek Porkins pulls forces back", Description = "surviving imperials flee to planet beneath burning star destroyer", Type ="Main Quest" },
-                new Quest { QuestId = 11, Title = "Piett calls for reinforcements", Description = "An unexpected answer from a new threat", Type ="Main Quest" },
-                new Quest { QuestId = 12, Title = "The Leviathan", Description = "Darth Malak emerges from the outer rim with inquisitors", Type ="Main Quest" },
-                new Quest { QuestId = 13, Title = "Dxun Jungle", Description = "Po and Meetra search for imperial crash landers", Type ="Main Quest" },
-                new Quest { QuestId = 14, Title = "Back to Telos", Description = "Atris continues Quades jedi training", Type ="Side Quest" },
-                new Quest { QuestId = 15, Title = "An Old Order", Description = "Rey begins searching for the new sith threat", Type ="Main Quest" }
+                new Quest { QuestId = 2, Title = "Academy on Telos", Description = "Char Meets Master Atris", Type ="Main Quest", CharacterId= 2 },
+                new Quest { QuestId = 3, Title = "Memories Unlimited", Description = "Char travels to Jedha in search of holocron", Type ="Main Quest", CharacterId= 3 },
+                new Quest { QuestId = 4, Title = "Trouble on Tanalor", Description = "Char comes face to face with an inquisitor", Type ="Main Quest", CharacterId= 4 },
+                new Quest { QuestId = 5, Title = "Back to Jaku", Description = "Rey meets char outside shuttle for news", Type ="Main Quest", CharacterId= 5},
+                new Quest { QuestId = 6, Title = "A disturbance in the force", Description = "Char begins reliving inquistor standoff", Type ="Main Quest", CharacterId= 11},
+                new Quest { QuestId = 7, Title = "Palpatine Returns", Description = "The spirit of palpatine endures", Type ="Main Quest", CharacterId= 17},
+                new Quest { QuestId = 8, Title = "Rebel Forces Engage Defectors", Description = "beyond the astroid belt a star destroyer is found", Type ="Main Quest", CharacterId= 19 },
+                new Quest { QuestId = 9, Title = "Po Dameron crash lands on Dxun", Description = "Po meets Meetra Surik a Jedi exile living among mandalorians", Type ="Main Quest", CharacterId= 13 },
+                new Quest { QuestId = 10, Title = "Jek Porkins pulls forces back", Description = "surviving imperials flee to planet beneath burning star destroyer", Type ="Main Quest", CharacterId= 25 },
+                new Quest { QuestId = 11, Title = "Piett calls for reinforcements", Description = "An unexpected answer from a new threat", Type ="Main Quest", CharacterId= 10 },
+                new Quest { QuestId = 12, Title = "The Leviathan", Description = "Darth Malak emerges from the outer rim with inquisitors", Type ="Main Quest", CharacterId= 7 },
+                new Quest { QuestId = 13, Title = "Dxun Jungle", Description = "Po and Meetra search for imperial crash landers", Type ="Main Quest", CharacterId= 6},
+                new Quest { QuestId = 14, Title = "Back to Telos", Description = "Atris continues Quades jedi training", Type ="Side Quest", CharacterId= 11},
+                new Quest { QuestId = 15, Title = "An Old Order", Description = "Rey begins searching for the new sith threat", Type ="Main Quest", CharacterId= 24}
             );
         }
     }

@@ -10,8 +10,8 @@ using StarWars.Models;
 namespace New_Harbinger.Migrations
 {
     [DbContext(typeof(HarbingerDbContext))]
-    [Migration("20240509222421_SecondCreate")]
-    partial class SecondCreate
+    [Migration("20240509223739_ThirdCreate")]
+    partial class ThirdCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -263,7 +263,7 @@ namespace New_Harbinger.Migrations
                         new
                         {
                             QuestId = 2,
-                            CharacterId = 0,
+                            CharacterId = 2,
                             Description = "Char Meets Master Atris",
                             Title = "Academy on Telos",
                             Type = "Main Quest"
@@ -271,7 +271,7 @@ namespace New_Harbinger.Migrations
                         new
                         {
                             QuestId = 3,
-                            CharacterId = 0,
+                            CharacterId = 3,
                             Description = "Char travels to Jedha in search of holocron",
                             Title = "Memories Unlimited",
                             Type = "Main Quest"
@@ -279,7 +279,7 @@ namespace New_Harbinger.Migrations
                         new
                         {
                             QuestId = 4,
-                            CharacterId = 0,
+                            CharacterId = 4,
                             Description = "Char comes face to face with an inquisitor",
                             Title = "Trouble on Tanalor",
                             Type = "Main Quest"
@@ -287,7 +287,7 @@ namespace New_Harbinger.Migrations
                         new
                         {
                             QuestId = 5,
-                            CharacterId = 0,
+                            CharacterId = 5,
                             Description = "Rey meets char outside shuttle for news",
                             Title = "Back to Jaku",
                             Type = "Main Quest"
@@ -295,7 +295,7 @@ namespace New_Harbinger.Migrations
                         new
                         {
                             QuestId = 6,
-                            CharacterId = 0,
+                            CharacterId = 11,
                             Description = "Char begins reliving inquistor standoff",
                             Title = "A disturbance in the force",
                             Type = "Main Quest"
@@ -303,7 +303,7 @@ namespace New_Harbinger.Migrations
                         new
                         {
                             QuestId = 7,
-                            CharacterId = 0,
+                            CharacterId = 17,
                             Description = "The spirit of palpatine endures",
                             Title = "Palpatine Returns",
                             Type = "Main Quest"
@@ -311,7 +311,7 @@ namespace New_Harbinger.Migrations
                         new
                         {
                             QuestId = 8,
-                            CharacterId = 0,
+                            CharacterId = 19,
                             Description = "beyond the astroid belt a star destroyer is found",
                             Title = "Rebel Forces Engage Defectors",
                             Type = "Main Quest"
@@ -319,7 +319,7 @@ namespace New_Harbinger.Migrations
                         new
                         {
                             QuestId = 9,
-                            CharacterId = 0,
+                            CharacterId = 13,
                             Description = "Po meets Meetra Surik a Jedi exile living among mandalorians",
                             Title = "Po Dameron crash lands on Dxun",
                             Type = "Main Quest"
@@ -327,7 +327,7 @@ namespace New_Harbinger.Migrations
                         new
                         {
                             QuestId = 10,
-                            CharacterId = 0,
+                            CharacterId = 25,
                             Description = "surviving imperials flee to planet beneath burning star destroyer",
                             Title = "Jek Porkins pulls forces back",
                             Type = "Main Quest"
@@ -335,7 +335,7 @@ namespace New_Harbinger.Migrations
                         new
                         {
                             QuestId = 11,
-                            CharacterId = 0,
+                            CharacterId = 10,
                             Description = "An unexpected answer from a new threat",
                             Title = "Piett calls for reinforcements",
                             Type = "Main Quest"
@@ -343,7 +343,7 @@ namespace New_Harbinger.Migrations
                         new
                         {
                             QuestId = 12,
-                            CharacterId = 0,
+                            CharacterId = 7,
                             Description = "Darth Malak emerges from the outer rim with inquisitors",
                             Title = "The Leviathan",
                             Type = "Main Quest"
@@ -351,7 +351,7 @@ namespace New_Harbinger.Migrations
                         new
                         {
                             QuestId = 13,
-                            CharacterId = 0,
+                            CharacterId = 6,
                             Description = "Po and Meetra search for imperial crash landers",
                             Title = "Dxun Jungle",
                             Type = "Main Quest"
@@ -359,7 +359,7 @@ namespace New_Harbinger.Migrations
                         new
                         {
                             QuestId = 14,
-                            CharacterId = 0,
+                            CharacterId = 11,
                             Description = "Atris continues Quades jedi training",
                             Title = "Back to Telos",
                             Type = "Side Quest"
@@ -367,7 +367,7 @@ namespace New_Harbinger.Migrations
                         new
                         {
                             QuestId = 15,
-                            CharacterId = 0,
+                            CharacterId = 24,
                             Description = "Rey begins searching for the new sith threat",
                             Title = "An Old Order",
                             Type = "Main Quest"
