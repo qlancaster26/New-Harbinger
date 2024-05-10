@@ -25,9 +25,24 @@ namespace New_Harbinger.Pages.Characters
 
         public int PageSize {get; set;} = 10;
 
+        [BindProperty(SupportsGet = true)]
+        public string CurrentSort {get; set;}
+
         public async Task OnGetAsync()
         {
-            Character = await _context.Characters.Skip((PageNum-1)*PageSize).Take(PageSize).ToListAsync();
+            var query = _context.Characters.Select( c => c);
+
+            switch (CurrentSort)
+            {
+                case "first_asc":
+                    query = query.OrderBy(c => c.Name);
+                    break;
+                case "first_desc":
+                    query = query.OrderByDescending(c => c.Name);
+                    break;
+            }
+            
+            Character = await query.Skip((PageNum-1)*PageSize).Take(PageSize).ToListAsync();
         }
     }
 }
